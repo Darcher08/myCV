@@ -2,146 +2,167 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>CV - Ocat</title>
+  <title>Luis Palma</title>
   <meta name="description" content="simple CV example created with HTML and CSS">
   <meta name="author" content="Fly Nerd">
-  <link rel="icon" href="./img/favicon.ico">
+  <link rel="icon" href="./img/favicon_cv.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <div>
-      <img src="./img/avatar.jpg" />
+      <img src="./img/mifoto.jpeg" alt="mifoto"/>
     </div>
-    <h1>Ocat Verdigris</h1>
-    <section>
-      <p>Hello! I am Ocat Verdigris. I work as interface and front-end developer. I have passion for pixel perfect, minimal and easy to use interfaces. I'm  focused, dedicated, hard-working and willing to learn in a changing and challenging environment.</p>
-      <a href="https://www.facebook.com/flynerdpl/" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.twitter.com/flynerdpl/" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://github.com/ritaly" target="_blank">
-        <i class="fab fa-github-alt"></i>
-      </a>
-      <a href="https://www.instagram.com/flynerdpl/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ritalyczywek/" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+    <h1 class="title">Luis Palma</h1>
+    <section class="presentation">
+      <p> 
+        
+        Estudiante de Ciencias de la Computación con una sólida base teórica y entusiasmo por el desarrollo de software. He explorado áreas como procesamiento de lenguaje natural, realidad aumentada y desarrollo web básico con HTML y CSS. Actualmente, me estoy capacitando en desarrollo móvil con Kotlin. Soy proactivo, con gran capacidad de aprendizaje y siempre en busca de nuevos desafíos para aplicar mis conocimientos.
+      </p>
+      <div class="contactos">
+        <a href="https://github.com/Darcher08" target="_blank">
+          <i class="fab fa-github-alt"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/luis-palma-4a78b1325/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:tu_correo_electronico@ejemplo.com">
+          <i class="fas fa-envelope"></i> <span>Contáctame</span>
+        </a>
+      </div>
+      
+
     </section>
+
   </header>
+
   <main>
     <section>
-      <h3>Courses & Workshops</h3>
+      <h3>Proyectos</h3>
+
       <article class='course'>
-        <div class='title'>
-          <h4>Udacity: Intro to HTML and CSS</h4>
+        <div class='title' >
+          <h3>Diccionario inverso</h3>
+          <h4>Procesamiento de lenguaje natural</h4> 
+          <img class="diccionario" src="../img/grafo.jpeg" alt="diccionario">
         </div>
         <div class="descrition">
-          <p>Build styled, well-structured websites. Learn how to use HTML5 standard to create websites. Understand CSS syntax, selectors, and units. Learn about code editors and a browser's Developer Tools.</p>
+        <p>
+          <strong>Recopilé un corpus de textos relacionados a pedagogía y realicé tareas de limpieza y normalización</strong> para asegurar la calidad de los datos, utilizando bibliotecas como <strong>NLTK</strong> (tokenización) y <strong>spaCy</strong> (lematización) para el procesamiento de texto.<br>
+          Utilicé modelos de similitud semántica, para relacionar descripciones con palabras específicas, <strong>implementé la representación de grafos con peso</strong> para determinar la cercanía entre las palabras y otras palabras relacionadas.<br>
+          Por último, <strong>usé diferentes algoritmos de búsqueda proporcionados por NetworkX</strong>, como closeness centrality, betweenness centrality, degree centrality, etc, para evaluar la eficiencia de las conexiones entre palabras. <br>
+          Obteniendo así que el algoritmo de closeness centrality tuvo mejores resultados a diferencia de los demás.
+        </p>
         </div>
       </article>
+
       <article class='course'>
         <div class='title'>
-          <h4>Udemy: The Web Developer Bootcamp</h4>
+          <h3>Ecuación de calor</h3>
+          <h4>Cómputo Científico</h4>
+          <img class="ec-calor" src="../img/ecCalor.jpeg" alt="imgCalor.jpeg">
         </div>
         <div class="descrition">
-          <p>Learn how to create full-stack web applications from scratch using HTML, CSS, JavaScript, jQuery, VanillaJS, NodeJS, MongoDB.</p>
+          <p>
+            Desarrollé un proyecto enfocado en la representación de la <strong>ecuación de calor</strong> utilizando librerías de MPI en Fortran. El objetivo del proyecto era simular cómo la ecuación de calor afecta a una placa a lo largo del tiempo. <br>
+            Para lograr esto, se dividió la placa en una <strong>topografía de zonas</strong>, asignando un hilo a cada una. Cada hilo era responsable de calcular la evolución de la temperatura en su zona específica. A medida que avanzaba el tiempo, los hilos debían comunicarse con sus vecinos (arriba, abajo, izquierda y derecha) para intercambiar resultados, asegurando una correcta simulación en los bordes de la placa. <br>
+            La comunicación entre hilos era crucial, especialmente en los bordes, donde los conflictos se resolvían mediante la sincronización de los valores calculados. El primer hilo en terminar su cálculo pasaba el valor al siguiente, y así sucesivamente, garantizando la coherencia de los datos. <br>
+            Una vez completados los cálculos para los n intervalos de tiempo, los resultados se exportaban a <strong>ParaView</strong> para visualizar el comportamiento de la temperatura en la placa. Esta visualización permitía analizar de manera efectiva la dinámica térmica y la precisión de la simulación.
+          </p>
         </div>
       </article>
+      
       <article class='course'>
         <div class='title'>
-          <h4>EdX: Web Programming with JavaScript</h4>
+          <h3>Cortometraje en Blender</h3>
+          <h4>Modelado y animación 3D </h4>
+
+          <img class="diccionario" src="../img/modelo3D.jpeg" alt="modelo3D">
+
         </div>
+
         <div class="descrition">
-          <p>Learn how to create web apps and prototypes with JavaScript, represent and exchange data using JavaScript Object Notation (JSON), and how to access RESTful APIs on the web.</p>
+          <p>
+            En este proyecto, desarrollé un cortometraje utilizando exclusivamente Blender, siendo responsable de todas las etapas de producción. <br> 
+            <strong>Desarrollo de la Historia</strong>: Escribí el guion y desarrollé la narrativa del cortometraje, asegurando una trama coherente y atractiva. <br> 
+            <strong>Diseño de Personajes y Modelado 3D</strong>: Creé los personajes y los modelos 3D, cuidando cada detalle para darles vida y personalidad. <br> 
+            <strong>Animación</strong>: Realicé las animaciones de los personajes y los escenarios, utilizando técnicas avanzadas de Blender para lograr movimientos fluidos y realistas. <br> 
+            <strong>Colores e Iluminación</strong>: Diseñé la paleta de colores y configuré la iluminación para crear la atmósfera adecuada y resaltar los elementos clave de cada escena. <br> 
+            <strong>Edición y Postproducción</strong>: Integré todos los elementos y realicé la edición final del cortometraje, asegurando una presentación profesional y de alta calidad.
+
+
+          </p>
         </div>
       </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>Django Girls: 2-Day Workshops</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn back-end development with simple blog application using Django  framework.</p>
-        </div>
-      </article>
+
     </section>
+    
     <section>
-      <h3>Skills</h3>
+      <h3>Conocimientos</h3>
       <div class='skills'>
-        <div class='column'>
-          <h4>Good knowledge</h4>
+        <div class='column'> 
+          <h4>Experimentado</h4>
           <ul>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>JavaScript ES5/6</li>
-            <li>SQL</li>
+            <li>Python</li>
+            <li>Kotlin</li> 
+            <li>Blender</li>
+            <li>C/C++</li>
           </ul>
         </div>
-        <div class='column'>
-          <h4>Basic knowledge</h4>
+        <div class='column'> 
+          <h4>Básico</h4>
           <ul>
-            <li>jQuery</li>
-            <li>NodeJS</li>
-            <li>MongoDB</li>
-            <li>Django</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
           </ul>
         </div>
         <div>
-          <h4>Languages</h4>
-          <p>🇵🇱 Polish - Native speaker</p>
-          <p>🇬🇧 English - Proficient C1/C2</p>
-          <p>🇫🇷 French - Advanced - C1</p>
-          <p>🇪🇸 Spanish - Intermediate - B1/B2</p>
-          <p>🇩🇪 German - Elementary / Communicative - A2</p>
+          <h3>Idiomas</h3> 
+          <p>🇪🇸 Español - Nativo</p> 
+          <p>🇬🇧 Inglés - B2/C1</p> 
+          
         </div>
       </div>
     </section>
 
     <section>
-      <h3>Education</h3>
+      <h3>Educación</h3>
       <article>
         <div class='school'>
-          <span>2015-2018</span> <strong>Octocats tech academy</strong>
+          <span>2016-2019</span> <strong>Prepa 2 - UADY</strong>
         </div>
         <div class="descrition">
-          Bechelor Degree of Octorobotics
+          Bachillerato
         </div>
       </article>
       <article>
         <div class='school'>
-          <span>2012-2015</span> <strong>Underwater kittens high school</strong>
+          <span>2021 - en curso</span> <strong>Facultad de Matemáticas</strong>
         </div>
         <div>
-          Main subject: Cathemathics
+          Licenciatura en Ciencias de la Computación
         </div>
       </article>
     </section>
     <section>
-      <h3>Experience</h3>
+      <h3>Aptitudes</h3>
       <article>
-        <div class='job-title'>
-          <span>03.2018 - 06.2018</span> <strong>Tentacles Company</strong><br> <strong>Position:</strong> Web developer Intern
-        </div>
-        <div>
-          <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>
-          <ul class="job-description">
-            <li>Develop web application for Octopoda departments</li>
-            <li>Implement UI (front-end site) based on received graphic design and requirements</li>
-            <li>Co-operate with the back-end team </li>
+        <div> 
+          <ul class="habilidades">
+            <li>Comunicación Efectiva</li>
+            <li>Resolución de problemas</li>
+            <li>Trabajo en equipo </li>
           </ul>
         </div>
       </article>
     </section>
   </main>
   <footer>
-    <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a>  / <a href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>
+    
   </footer>
 </body>
 </html>
